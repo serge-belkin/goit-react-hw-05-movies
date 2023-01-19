@@ -5,7 +5,7 @@ import API from 'services/api/api';
 import css from './Movies.module.css';
 import MovieGallery from 'components/MovieGallery/MovieGallery';
 
-export const Movies = () => {
+const Movies = () => {
   const [query, setQuery] = useState('');
   const [search, setSearch] = useState('');
   const [items, setItems] = useState('');
@@ -52,3 +52,5 @@ export const Movies = () => {
     </div>
   );
 };
+
+export default Movies;

@@ -1,7 +1,7 @@
 import MovieCard from './MovieCard';
 import css from 'MovieGallery.module.css';
 
-export const MovieGallery = ({ items }) => {
+ const MovieGallery = ({ items }) => {
   return (
     <ul className={css.gallery}>
       {items.map(item => (
@@ -10,3 +10,5 @@ export const MovieGallery = ({ items }) => {
     </ul>
   );
 };
+
+export default MovieGallery;

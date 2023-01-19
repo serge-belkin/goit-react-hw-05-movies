@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import API from 'services/api/api';
+import { API } from '../services/api';
 import css from './Casts.module.css';
-import Thumbnail from 'components/Thumbnail/Thumbnail';
+import { Thumbnail } from './components/Thumbnail/';
 
-export const Casts = () => {
+const Casts = () => {
   const { movieId } = useParams();
   const [items, setItems] = useState(null);
 
@@ -45,3 +45,5 @@ export const Casts = () => {
     </>
   );
 };
+
+export default Casts;

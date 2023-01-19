@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import API from 'services/api/api';
 import MovieGallery from 'components/MovieGallery/MovieGallery';
 
-export const Home = () => {
+const Home = () => {
   const [items, setItems] = useState('');
   useEffect(() => {
     API.getTrending()
@@ -18,3 +18,5 @@ export const Home = () => {
     </>
   );
 };
+
+export default Home;

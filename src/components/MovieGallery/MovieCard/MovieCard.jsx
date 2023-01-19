@@ -1,7 +1,7 @@
 import { NavLink, useLocation } from 'react-router-dom';
 import css from './MovieCard.module.css';
 
-export const MovieCard = ({ item: { backdrop_path, title, poster_path, id } }) => {
+const MovieCard = ({ item: { backdrop_path, title, poster_path, id } }) => {
   const img = backdrop_path ? backdrop_path : poster_path;
   const location = useLocation();
   return (
@@ -21,3 +21,5 @@ export const MovieCard = ({ item: { backdrop_path, title, poster_path, id } }) =
     </li>
   );
 };
+
+export default MovieCard;

@@ -1,7 +1,7 @@
 import css from './Thumbnail.module.css';
 import PropTypes from 'prop-types';
 
-export const Thumbnail = ({ noText }) => {
+const Thumbnail = ({ noText }) => {
   return (
     <div className={css.container}>
     </div>
@@ -10,3 +10,5 @@ export const Thumbnail = ({ noText }) => {
 Thumbnail.propTypes = {
   noText: PropTypes.string,
 };
+
+export default Thumbnail;
