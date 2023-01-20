@@ -1,0 +1,25 @@
+.container {
+  padding-left: 15px;
+}
+
+.link {
+
+  padding: 10px 15px;
+  margin: 5px;
+  color: #111;
+  border-radius: 5px;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+  transition: background-color 250ms ease, color 250ms ease;
+}
+
+.link:hover {
+  background-color: #2F70AF;
+  opacity: 0.8;
+}
+
+.active {
+  color: #fff;
+  background-color: #2F70AF;
+}

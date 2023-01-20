@@ -43,7 +43,7 @@ const MovieInfo = () => {
         />
         <div className={css.info}>
           <h1 className={css.title}>{`${title}(${year})`}</h1>
-          <p>{`User score ${Math.round(popularity)}`}</p>
+          <p className={css.score}>{`User score: ${Math.round(popularity)}`}</p>
           <b>Overview</b>
           <p>{overview}</p>
           <b>Genres</b>

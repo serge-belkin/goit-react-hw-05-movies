@@ -34,11 +34,11 @@ const Casts = () => {
               />
             ) : (
               <div className={css.thumb}>
-                <Thumbnail noText="Photo not avaliable" />
+                <Thumbnail />
               </div>
             )}
             <p className={css.name}>{name}</p>
-            <p>{character}</p>
+            <p className={css.character}>{character}</p>
           </li>
         ))}
       </ul>

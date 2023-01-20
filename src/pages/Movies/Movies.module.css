@@ -19,11 +19,14 @@
 .searchButton {
   display: inline-block;
   border: 0px;
-  opacity: 0.5;
+  color: #fff;
+  opacity: 0.8;
   transition: opacity 300ms cubic-bezier(.17, .67, .83, .67);
+  font-size: 20px;
   cursor: pointer;
   padding: 5px 15px;
   outline: none;
+  background-color: #2F70AF;
 }
 
 .searchButton:hover {

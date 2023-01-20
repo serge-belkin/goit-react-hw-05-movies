@@ -10,7 +10,10 @@ const MovieInfo = lazy(() => import('pages/MovieInfo'))
 
 export const App = () => {
   return (
-    <div>
+    <div style={{
+        maxWidth: '1600px',
+      margin: '0 auto',
+      }}>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />

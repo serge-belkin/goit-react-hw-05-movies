@@ -1,0 +1,47 @@
+.container {
+  position: relative;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  width: calc(100vw / 4 - 15px);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1199px) {
+  .container {
+    width: calc(100vw / 3 - 15px);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: calc(100vw / 2 - 15px);
+  }
+}
+
+.link {
+  display: block;
+}
+
+.poster {
+  max-width: 100%;
+}
+
+.title {
+  position: absolute;
+  width: 100%;
+  padding: 10px;
+  margin: 0;
+  box-sizing: border-box;
+  display: block;
+  bottom: 0;
+  left: 0;
+  background-color: #B9848C;
+  color: #fff;
+  transform: translateY(100%);
+  transition: transform 250ms ease-in;
+}
+
+.container:hover .title {
+  transform: translateY(0);
+}

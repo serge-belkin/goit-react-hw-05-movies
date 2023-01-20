@@ -15,7 +15,7 @@
   padding: 5px;
   text-decoration: none;
   display: inline-block;
-  color: #111;
+  color: #2F70AF;
   font-weight: 800;
 }
 
@@ -73,4 +73,9 @@
 .options .active {
   color: #fff;
   background-color: #806491;
+}
+
+.score {
+  font-weight: 700;
+  color: #00457E;
 }
