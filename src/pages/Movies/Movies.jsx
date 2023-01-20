@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { useEffect } from 'react';
-import API from 'services/api/api';
+import API from 'services/api';
 import css from './Movies.module.css';
-import MovieGallery from 'components/MovieGallery/MovieGallery';
+import MovieGallery from 'components/MovieGallery';
 
 const Movies = () => {
   const [query, setQuery] = useState('');

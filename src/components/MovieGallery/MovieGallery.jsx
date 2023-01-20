@@ -1,7 +1,8 @@
 import MovieCard from './MovieCard';
-import css from 'MovieGallery.module.css';
+import css from './MovieGallery.module.css';
+import PropTypes from 'prop-types';
 
- const MovieGallery = ({ items }) => {
+const MovieGallery = ({ items }) => {
   return (
     <ul className={css.gallery}>
       {items.map(item => (
@@ -9,6 +10,10 @@ import css from 'MovieGallery.module.css';
       ))}
     </ul>
   );
+};
+
+MovieGallery.propTypes = {
+  items: PropTypes.arrayOf(PropTypes.object),
 };
 
 export default MovieGallery;

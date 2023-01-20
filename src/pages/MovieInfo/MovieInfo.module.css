@@ -1,0 +1,76 @@
+.container {
+  display: flex;
+  align-items: flex-start;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #2F70AF;
+}
+
+.title {
+  margin: 0;
+  color: #00457E;
+}
+
+.link {
+  padding: 5px;
+  text-decoration: none;
+  display: inline-block;
+  color: #111;
+  font-weight: 800;
+}
+
+.poster {
+  max-width: 30vw;
+  height: auto;
+}
+
+@media screen and (max-width: 799px) {
+  .poster {
+    max-width: 90vw;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .title {
+    margin-top: 10px;
+  }
+}
+
+.info {
+  padding: 0 15px;
+}
+
+.optionsTitle {
+  padding: 5px 10px;
+  margin: 0;
+  font-size: 21px;
+  color: #806491;
+}
+
+.options {
+  font-size: 17px;
+  list-style: none;
+  margin: 0 0 15px 0;
+  display: flex;
+}
+
+.options .link {
+  width: 120px;
+  padding: 5px 10px;
+  text-align: center;
+  color: #806491;
+  background-color: #fafafa;
+  margin: 3px;
+  border-radius: 8px;
+}
+
+.options .link:hover {
+  background-color: #8b8b8b;
+}
+
+.options .active {
+  color: #fff;
+  background-color: #806491;
+}

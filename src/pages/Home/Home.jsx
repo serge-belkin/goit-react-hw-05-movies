@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
-import API from 'services/api/api';
-import MovieGallery from 'components/MovieGallery/MovieGallery';
+import API from 'services/api';
+import MovieGallery from 'components/MovieGallery';
+import css from './Home.module.css';
 
 const Home = () => {
   const [items, setItems] = useState('');
@@ -13,7 +14,7 @@ const Home = () => {
 
   return (
     <>
-      <h1>Trending today</h1>
+      <h1 className={css.title}>Trending today</h1>
       <MovieGallery items={items ? items : []} />
     </>
   );

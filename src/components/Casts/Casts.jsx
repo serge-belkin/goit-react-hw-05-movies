@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { API } from '../services/api';
+import API from 'services/api';
 import css from './Casts.module.css';
-import { Thumbnail } from './components/Thumbnail/';
+import Thumbnail from 'components/Thumbnail';
 
 const Casts = () => {
   const { movieId } = useParams();
@@ -34,10 +34,10 @@ const Casts = () => {
               />
             ) : (
               <div className={css.thumb}>
-                <Thumbnail noText="Poster not avaliable" />
+                <Thumbnail noText="Photo not avaliable" />
               </div>
             )}
-            <p>{name}</p>
+            <p className={css.name}>{name}</p>
             <p>{character}</p>
           </li>
         ))}
